@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-mongodb-crud-desarrollo-y-despliegue-",
+  "version": "1.0.0",
+  "description": "nodeJS Mongodb CRUD (desarrollo y despliegue)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-.git"
+  },
+  "keywords": [],
+  "author": "Heinner Vega <heinnervega20@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-/issues"
+  },
+  "homepage": "https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-#readme"
+}
