@@ -1,18 +1,29 @@
 <form action="/tasks/add" method="POST">
-<div>
+  <div>
     <label for="title">Write a title:</label>
-    <input type="text" name="title" placeholder="Title" id="title">
-</div>
+    <input type="text" name="title" placeholder="Title" id="title" />
+  </div>
 
-<div>
+  <div>
     <label for="description">description</label>
-    <textarea 
-    name="description"
-    placeholder="Description"
-    id="description"
+    <textarea
+      name="description"
+      placeholder="Description"
+      id="description"
     ></textarea>
-</div>
+  </div>
 
-<button>add</button>
+  <button>add</button>
 
 </form>
+
+<ul>
+  {{#each tasks}}
+    <li>
+      {{title}}
+      <p>{{description}}</p>
+      <button>edit</button>
+      <button>delete</button>
+    </li>
+  {{/each}}
+</ul>
