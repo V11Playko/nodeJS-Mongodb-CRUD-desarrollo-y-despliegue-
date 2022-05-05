@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.18.0",
     "express-handlebars": "^6.0.5",
     "mongoose": "^6.3.1",
