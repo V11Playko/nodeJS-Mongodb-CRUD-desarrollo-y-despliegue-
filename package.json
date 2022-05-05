@@ -4,10 +4,11 @@
   "description": "nodeJS Mongodb CRUD (desarrollo y despliegue)",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-.git"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/V11Playko/nodeJS-Mongodb-CRUD-desarrollo-y-despliegue-#readme",
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
     "dotenv": "^16.0.0",
     "express": "^4.18.0",
     "express-handlebars": "^6.0.5",
@@ -28,7 +30,11 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-regenerator": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.10",
     "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.5",
+    "ncp": "^2.0.0",
     "nodemon": "^2.0.15"
   }
 }
